@@ -1,0 +1,66 @@
+html,
+body {
+	width: 100%;
+	height:	100%;
+	//background: url('../assets/train-station.jpg');
+	background-size: cover;
+
+	.side-menu {
+		position: fixed;
+		z-index: 100;
+		width: 220px;
+		left: -220px;
+		top: 0;
+		background-color: rgba(255, 153, 0, .6);
+
+		.curtain {
+			position: fixed;
+			z-index: 500;
+			width: 220px;
+			left: -220px;
+			min-height: 100%;
+			background-color: white;
+
+			img {
+				width: 220px;
+				position: fixed;
+				height: auto;
+				object-fit: cover;
+				overflow: hidden;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+
+		.logo {
+			width: 220px;
+			img {
+				width: 100%;
+				height: auto;
+				object-fit: cover;
+				overflow: hidden;
+			}
+		}
+
+		.menu-arrow {
+			position: fixed;
+			width: 36px;
+			top: 50%;
+			left: 10px;
+		}
+	}
+	 .browse-articles {
+	 	min-width: 100%;
+	 	min-height: 100%;
+
+	 	article {
+	 		position: fixed;
+	 		width: 100%;
+	 		min-height: 100%;
+	 		top: 0;
+	 		left: 0;
+	 	}
+	 	.article-1 {z-index: 2;background:url('../assets/train-station.jpg')}
+	 	.article-2 {z-index: 1;background:url('../assets/train-template2.jpg')}
+	 }
+}
