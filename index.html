@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  <html>
+  <html ng-app = "webApp">
     <head>
 
       <title></title>
@@ -9,30 +9,75 @@
       <!--Import materialize.css-->
       <!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
 
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700" rel="stylesheet">
+
       <link type="text/css" rel="stylesheet" href="css/normalize.css"/>
       <link type="text/css" rel="stylesheet" href="css/styles.css"/>
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!-- Angular-->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+      <script src="https://code.angularjs.org/1.6.4/angular-route.min.js"></script>
+      <!--///-->
+
+      <script type="text/javascript" src="js/app.js"></script>
     </head>
 
     <body>
       <!--<img class="background" src="assets/train-station.jpg"/>-->
-      <section class="side-menu">
+      <section ng-controller = "homeController">
+        <section class="side-menu">
+          <div class="curtain">
+              <img class="" src="assets/train3.png" alt=""/>
+          </div>
+          <img class="menu-arrow" src="assets/left-arrow.png" alt=""/>
+          <div class="logo">
+          
+          </div>
+          <div>
+             <p>
+               {{sideCaption}}
+             </p>
+             <p class="read-more">Read more</p>
+          </div>
+        </section>
+      
+        <section class="browse-articles">
+          <article class="article-1">
+          </article>
+          <article class="article-2">
+          </article>
+          <article class="article-3">
+          </article>
+        </section>
+      </section>  
+
+      <section ng-controller = "reviewController" class="article-review">
         <div class="curtain">
             <img class="" src="assets/train3.png" alt=""/>
         </div>
-        <img class="menu-arrow open-menu" src="assets/right-arrow-circular-button.png" alt=""/>
-        <div class="logo">
 
-        </div>
-
-      </section>
-
-      <section class="browse-articles">
-        <article class="article-1">
-        </article>
-        <article class="article-2">
+        <article class="text">
+          <p>
+            {{review}}
+          </p>
+          <div class="back-to-main">
+            Back to HomePage
+          </div>
+        </article>  
+        <article class="photo-gallery">
+          <div class="photo">
+          </div>
+          <div class="photo">
+          </div>
+          <div class="photo">
+          </div>
+          <div class="photo">
+          </div>
+          <div class="more-button">
+            <img class="" src="assets/plus.png" alt=""/>
+          </div>
         </article>
       </section>
 
